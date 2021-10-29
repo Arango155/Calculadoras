@@ -1,0 +1,44 @@
+<!-- Josue David Garcia Arango, 0909-21-11375 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+
+    <title> Ejercicio 1 </title>
+
+    <style>body {
+        background: #ecf0f1;
+        font-family: sans-serif;
+        margin: 0 auto;
+      }</style>
+      
+</head>
+
+    <body>
+
+        <h3> Bienvenido a la calculadora de la hipotenusa de un triangulo rectangulo  </h3>
+
+        <form action="">  
+            Ingrese el primer lado (Lado A) =
+            <input type="text" id="num1">  <br>  <br>  
+            Ingrese el segundo lado (Lado B)=
+            <input type="text" id="num2">   
+
+            <input type="button" value="CALCULAR" onclick="alert( ejecutar(1,2) );">  
+        </form>
+
+        <script>
+                var ejecutar = function(a, b){     
+                var a = parseFloat(document.getElementById("num1").value); 
+                var b = parseFloat(document.getElementById("num2").value);  
+            
+                var hipotenusa = Number((Math.sqrt((Math.pow(a,2)+(Math.pow(b,2))))).toFixed(2));     
+                return "La hipotenusa es de: " +hipotenusa;                     
+            }
+        </script>
+<img src="https://www.alaingarcia.net/weird/i/2021-02-05_triangulo_rectangulo.svg" width="300" height="200">
+        
+    </body>
+</html>

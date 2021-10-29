@@ -1,0 +1,58 @@
+<!-- Josue David Garcia Arango, 0909-21-11375 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+    
+    <title> Ejercicio 3 </title>
+
+    <style>
+    
+    body {
+        background: #0D5446;
+        font-family: sans-serif;
+        color: aliceblue;
+
+        margin: 0 auto;
+      }
+      
+      
+      </style>
+
+</head>
+
+    <body>
+
+        <h3> Bienvenido a la calculadora del area de un trapecio  </h3>
+
+        <form action="">  
+            Ingrese la base inferior (b) =
+            <input type="text" id="b">  <br>  <br>  
+            Ingrese la base superior (B) =
+            <input type="text" id="B">  <br>  <br> 
+            Ingrese la altura (h) =
+            <input type="text" id="h">  
+
+            <input type="button" value="CALCULAR" onclick="alert( ejecutar(1,2,3) );">  
+        </form>
+
+        <script>
+                var ejecutar = function(a, b){     
+                var b = parseFloat(document.getElementById("b").value); 
+                var B = parseFloat(document.getElementById("B").value);  
+                var h = parseFloat(document.getElementById("h").value)
+            
+                var area = Number((((b+B)/2)*h).toFixed(2));     
+                return "El area del trapecio es de: " +area;                     
+            }
+
+
+        </script>
+<br>  <br> 
+<img src="https://i.ytimg.com/vi/uKhakN1VEF4/maxresdefault.jpg" width="300" height="200">
+
+
+    </body>
+</html>

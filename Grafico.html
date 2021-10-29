@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+    <title> ALGORITMOS </title>
+</head>
+
+    <body>
+
+        <h3> Suma de 2 numeros  </h3>
+
+        <form action="">  <!-- Creando un formulario -->
+            Numero 1 =
+            <input type="text" id="num1">  <br>  <br>  <!-- Agregando 1 caja de texto, para permitir ingresar el primer número, se le coloca un id que se utilizara para capturar el valor en la función-->
+            Numero 2 =
+            <input type="text" id="num2">   <!-- Agregando 1 caja de texto, para permitir ingresar el segundo número -->
+
+            <input type="button" value="SUMA" onclick="alert( sumar(1,2) );">  <!-- Agregando 1 boton, y al dar un clic mostra el resultado de la funcion sumar -->
+        </form>
+
+        <script>
+                var sumar = function(numero1, numero2){    // Declarando una variable y pasandole el valor de la función  
+                var numero1 = parseFloat(document.getElementById("num1").value);  //Captura el dato numerico ingresado en la primera caja de texto
+                var numero2 = parseFloat(document.getElementById("num2").value);  //Captura el dato numerico ingresado en la segunda caja de texto
+            
+                var resultado = numero1 + numero2;     // Suma de los valores numericos ingresados
+                return resultado;                      // Devuelve el resultado 
+            }
+        </script>
+
+    </body>
+</html>

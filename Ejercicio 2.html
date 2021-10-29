@@ -1,0 +1,54 @@
+<!-- Josue David Garcia Arango, 0909-21-11375 -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+
+    <title> Ejercicio 2 </title>
+
+    <style>body {
+        background: #FFFFFF;
+        font-family: sans-serif;
+        margin: 0 auto;
+      }</style>
+
+</head>
+
+    <body>
+
+        <script lang="javascript">
+
+            alert("Bienvenido al programa para calcular los promedios de las 3 notas de un alumno, a continuacion ingrese los datos que se le piden");
+                  
+          var n1 = prompt("Ingrese el nombre del alumno");
+
+        </script>
+<h3> Calculadora del promedio de las notas del alumno </h3>
+
+<form action="">  
+    Ingrese la primera nota =
+    <input type="text" id="num1">  <br>  <br>  
+    Ingrese la segunda nota =
+    <input type="text" id="num2">  <br> <br>
+    Ingrese la tercer nota =
+    <input type="text" id="num3">   
+
+    <input type="button" value="CALCULAR" onclick="alert( ejecutar(1,2,3) );">  
+</form>
+        <script>
+                var ejecutar = function(a, b,c){     
+                var a = parseFloat(document.getElementById("num1").value); 
+                var b = parseFloat(document.getElementById("num2").value);  
+                var c = parseFloat(document.getElementById("num3").value); 
+            
+                var promedio =Number(((a+b+c)/3).toFixed(2));     
+                return "El promedio de " +n1 +" es de " +promedio;                     
+            }
+
+        </script>
+
+<img src="https://www.calculadoraconversor.com/wp-content/uploads/2016/11/formula-para-calcular-la-media.png" >
+
+    </body>
+</html>

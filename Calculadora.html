@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> CALCULADORA_1 </title>
+</head>
+
+<body>
+<script lang="javascript">  
+    var operacion;
+    var num_1;
+    var num_2;
+
+    num_1 = prompt("INGRESE EL PRIMER NUMERO");
+    num_2 = prompt("INGRESE EL SEGUNDO NUMERO");
+
+    num_1 = parseInt(num_1);
+    num_2 = parseInt(num_2);
+   
+         operacion = prompt("INGRESE EL SIMBOLO DE LA OPERACION A REALIZAR: \n + SUMA  \n - RESTA  \n * MULTI  \n / DIV", "");
+    switch (operacion)
+    {
+        case "+": alert(num_1+num_2); break;
+        case "-": alert(num_1-num_2); break;
+        case "*": alert(num_1*num_2); break;
+        case "/": alert(num_1/num_2); break;
+        default: alert("OPERACION NO VALIDAD");  
+
+    } 
+
+</script>
+
+</body>
+</html>
